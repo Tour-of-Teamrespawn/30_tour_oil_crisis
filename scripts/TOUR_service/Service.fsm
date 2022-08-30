@@ -1,0 +1,744 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, Service">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-44.509003,-137.577591,45.490997,-87.577591,0.000000,"Start"};
+item1[] = {"_",1,250,-576.843140,-135.483826,-486.842896,-85.483803,0.000000,""};
+item2[] = {"",7,210,-382.295502,65.938385,-374.295502,73.938385,0.000000,""};
+item3[] = {"Check_For_Vehicl",4,4314,-43.259186,-43.906311,46.740814,6.093689,0.000000,"Check For Vehicles"};
+item4[] = {"NBo_Valid_VEhicl",4,218,-190.028442,44.258713,-100.028442,94.258713,0.000000,"NBo Valid VEhicles"};
+item5[] = {"Walked__To_Posit",4,218,-40.166779,511.695984,49.833221,561.695984,0.000000,"Walked" \n " To Positions"};
+item6[] = {"__1",2,250,-43.170715,44.721283,46.829300,94.721283,0.000000,""};
+item7[] = {"Valid_Vehicles",4,218,-43.384308,139.704544,46.615692,189.704544,0.000000,"Valid Vehicles"};
+item8[] = {"",7,210,-382.006042,246.899414,-374.006042,254.899414,0.000000,""};
+item9[] = {"",7,210,-381.255493,-23.504166,-373.255493,-15.504166,0.000000,""};
+item10[] = {"_",4,218,-421.830017,-136.468933,-331.830017,-86.468933,0.000000,""};
+item11[] = {"__2",2,250,-332.577728,43.641937,-242.577698,93.641937,0.000000,""};
+item12[] = {"__3",2,250,-44.179810,227.375565,45.820206,277.375580,0.000000,""};
+item13[] = {"Vehicle_Not__Ser",4,218,-190.443573,226.489624,-100.443573,276.489594,0.000000,"Vehicle Not " \n "Servicable"};
+item14[] = {"Engine_On__",4,218,-193.727783,415.998840,-103.727783,465.998810,0.000000,"Engine On!!"};
+item15[] = {"__4",2,250,-336.276855,415.382050,-246.277039,465.382050,0.000000,""};
+item16[] = {"__5",2,250,-336.059479,226.542511,-246.059448,276.542511,0.000000,""};
+item17[] = {"",7,210,-382.006042,436.466125,-374.006042,444.466125,0.000000,""};
+item18[] = {"Vehicle_Servicab",4,218,-43.529388,318.903412,46.470612,368.903381,0.000000,"Vehicle" \n "Servicable"};
+item19[] = {"__6",2,250,-41.971191,416.781189,48.028824,466.781189,0.000000,""};
+item20[] = {"__7",2,250,-34.063293,1057.296631,55.936722,1107.296509,0.000000,""};
+item21[] = {"_",4,218,-32.258881,1141.002563,57.741119,1191.002319,0.000000,""};
+item22[] = {"__8",2,250,-32.942383,1227.671265,57.057632,1277.671265,0.000000,""};
+item23[] = {"",7,210,29.086304,1181.469116,37.086304,1189.469116,0.000000,""};
+item24[] = {"__9",2,250,-39.417114,640.993835,50.582901,690.993835,0.000000,""};
+item25[] = {"Check__At_Positi",4,218,-33.629791,751.384277,56.370209,801.384277,0.000000,"Check " \n "At Position"};
+item26[] = {"",7,210,8.184631,559.264282,16.184631,567.264282,0.000000,""};
+item27[] = {"__10",2,250,-37.056519,857.260986,52.943497,907.260986,0.000000,""};
+item28[] = {"Timed_Action",4,218,96.072845,642.483093,186.072845,692.483093,0.000000,"Timed Action"};
+item29[] = {"_",4,218,-37.371674,956.972229,52.628326,1006.972290,0.000000,""};
+item30[] = {"Timed_ACtion",4,218,133.714386,1053.752075,223.714386,1103.752075,0.000000,"Timed ACtion"};
+item31[] = {"",7,210,-382.026520,1249.262451,-374.026520,1257.262329,0.000000,""};
+item32[] = {"",7,210,-147.063721,663.780457,-139.063721,671.780518,0.000000,""};
+item33[] = {"",7,210,-145.885101,874.351868,-137.885101,882.351868,0.000000,""};
+item34[] = {"",7,210,-147.564911,1077.256592,-139.564911,1085.256592,0.000000,""};
+link0[] = {0,3};
+link1[] = {2,9};
+link2[] = {3,6};
+link3[] = {4,11};
+link4[] = {5,26};
+link5[] = {6,4};
+link6[] = {6,7};
+link7[] = {7,12};
+link8[] = {8,2};
+link9[] = {9,3};
+link10[] = {9,10};
+link11[] = {10,1};
+link12[] = {11,2};
+link13[] = {12,13};
+link14[] = {12,18};
+link15[] = {13,16};
+link16[] = {14,15};
+link17[] = {15,17};
+link18[] = {16,8};
+link19[] = {17,8};
+link20[] = {18,19};
+link21[] = {19,5};
+link22[] = {19,14};
+link23[] = {20,21};
+link24[] = {20,30};
+link25[] = {20,34};
+link26[] = {21,23};
+link27[] = {22,31};
+link28[] = {23,22};
+link29[] = {24,25};
+link30[] = {24,28};
+link31[] = {24,32};
+link32[] = {25,27};
+link33[] = {26,24};
+link34[] = {27,29};
+link35[] = {27,33};
+link36[] = {28,24};
+link37[] = {29,20};
+link38[] = {30,20};
+link39[] = {31,17};
+link40[] = {32,14};
+link41[] = {33,32};
+link42[] = {34,33};
+globals[] = {0.000000,0,0,0,0,640,480,1,54,6316128,1,-943.375610,503.235657,1607.662476,-594.428101,607,924,1};
+window[] = {2,-1,-1,-1,-1,867,78,1518,78,3,625};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "Service";
+        class States
+        {
+                /*%FSM<STATE "Start">*/
+                class Start
+                {
+                        name = "Start";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"private [""_distance"", ""_grp"", ""_pos"", ""_type"",""_home1"", ""_home2"", ""_unit1"", ""_unit2"", ""_point1"", ""_point2"", ""_veh"", ""_fixTime"", ""_typeCheck"", ""_blackList"", ""_positions"", ""_defaults"", ""_defaultwheel"", ""_defaulthigh"", ""_defaultLow"", ""_dir1"", ""_dir2"", ""_timeout"", ""_anim1"", ""_anim2""];" \n
+                         "" \n
+                         "_grp = _this select 0;" \n
+                         "_pos = _this select 1;" \n
+                         "_type = _this select 2;" \n
+                         "_distance = _this select 3;" \n
+                         "" \n
+                         "_unit1 = (units _grp) select 0;" \n
+                         "_unit2 = (units _grp) select 1;" \n
+                         "_home1 = getPos _unit1;" \n
+                         "_home2 = getPos _unit2;" \n
+                         "_blacklist = [];" \n
+                         "" \n
+                         "_fixTime = 30;" \n
+                         "_defaults = [""wheel_1"", ""wheel_2"", ""wheel_3"", ""wheel_4"", ""engine_1_hide"", ""pitottube"", ""vstabilizer1"",""era_l_1_point"",""era_r_4_point"",""era_f_point"",""era_l_2_point"",""era_l_3_point"",""era_l_4_point"",""era_t_l_point"",""era_t_f_point"",""era_t_r_point"", ""wheel_2_1"", ""wheel_2_2"", ""hit_control_rear"", ""hit_trackl"",""hit_trackr"",""ramp_top"", ""rocket_pods"", ""wheel_2_1_steering"",""wheel_2_2_steering"",""wheel_1_2_steering"",""wheel_1_1_steering"", ""door_1"", ""door_2"", ""door_3"", ""door_4"", ""light_l"", ""light_r"", ""light_r2"", ""light_l2"", ""barrels"", ""mala vrtule"", ""hit_pylon_1"", ""tailrotor"", ""hit_rudder_r"", ""hit_rudder_l"", ""tail rotor"", ""hit_pylon_1"", ""hit_pylon_2""];" \n
+                         "_defaultwheel = [""wheel_1"", ""wheel_2"", ""wheel_3"", ""wheel_4"", ""wheel_2_1"", ""wheel_2_2"", ""wheel_1_1"", ""wheel_1_2"", ""wheel_2_1_steering"",""wheel_2_2_steering"",""wheel_1_2_steering"",""wheel_1_1_steering"",""hit_pylon_1"",""hit_pylon_2""];" \n
+                         "_defaulthigh = [""engine_1_hide"", ""pitottube"", ""vstabilizer1"",""era_l_1_point"",""era_r_4_point"",""era_f_point"",""era_l_2_point"",""era_l_3_point"",""era_l_4_point"",""era_t_l_point"", ""hit_control_rear"", ""mala vrtule"", ""hit_pylon_1"", ""tailrotor"", ""hit_rudder_r"", ""hit_rudder_l"", ""tail rotor""];" \n
+                         "_defaultLow = [""era_t_f_point"",""era_t_r_point"", ""door_1"", ""door_2"", ""door_3"", ""door_4""];" \n
+                         "" \n
+                         "_grp setSpeedMode ""Limited"";" \n
+                         "_grp setBehaviour ""Careless"";" \n
+                         "_grp setCombatMode ""BLUE"";" \n
+                         "_grp allowFleeing 0;" \n
+                         "" \n
+                         "_typeCheck = switch (_type) do" \n
+                         "{" \n
+                         "	case ""air"": {[""air""]};" \n
+                         "	case ""land"": {[""car"", ""truck"", ""tank"", ""wheeledAPC""]};" \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Check_For_Vehicl">*/
+                                class Check_For_Vehicl
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="__1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count (nearestObjects [_pos, _typeCheck, _distance]) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "_">*/
+                class _
+                {
+                        name = "_";
+                        itemno = 1;
+                        init = /*%FSM<STATEINIT""">*/"hint ""ended servicing!??!?!"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__1">*/
+                class __1
+                {
+                        name = "__1";
+                        itemno = 6;
+                        init = /*%FSM<STATEINIT""">*/"_veh = ((nearestObjects [_pos, _typeCheck, _distance]) select 0);" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Valid_Vehicles">*/
+                                class Valid_Vehicles
+                                {
+                                        itemno = 7;
+                                        priority = 0.000000;
+                                        to="__3";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(isEngineOn _veh)" \n
+                                         "&&" \n
+                                         "(" \n
+                                         "(fuel _veh < 0.98)" \n
+                                         "OR" \n
+                                         "(damage _veh > 0.02)" \n
+                                         ")" \n
+                                         "&&" \n
+                                         "!((typeOf _veh) in _blackList)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "NBo_Valid_VEhicl">*/
+                                class NBo_Valid_VEhicl
+                                {
+                                        itemno = 4;
+                                        priority = 0.000000;
+                                        to="__2";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isEngineOn _veh)" \n
+                                         "or" \n
+                                         "(" \n
+                                         "(fuel _veh > 0.98)" \n
+                                         "&&" \n
+                                         "(damage _veh < 0.02)" \n
+                                         ")" \n
+                                         "or" \n
+                                         "((typeOf _veh) in _blackList)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__2">*/
+                class __2
+                {
+                        name = "__2";
+                        itemno = 11;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!alive _unit1" \n
+                                         "or" \n
+                                         "!alive _unit2"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Check_For_Vehicl">*/
+                                class Check_For_Vehicl
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="__1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count (nearestObjects [_pos, _typeCheck, _distance]) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__3">*/
+                class __3
+                {
+                        name = "__3";
+                        itemno = 12;
+                        init = /*%FSM<STATEINIT""">*/"_positions = [];" \n
+                         "" \n
+                         "{" \n
+                         "	if (_x in _defaults) then" \n
+                         "	{" \n
+                         "		_positions set [count _positions, _x];" \n
+                         "	};" \n
+                         "}forEach (_veh selectionNames ""Hitpoints"");" \n
+                         "" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Vehicle_Servicab">*/
+                                class Vehicle_Servicab
+                                {
+                                        itemno = 18;
+                                        priority = 0.000000;
+                                        to="__6";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count _positions > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Vehicle_Not__Ser">*/
+                                class Vehicle_Not__Ser
+                                {
+                                        itemno = 13;
+                                        priority = 0.000000;
+                                        to="__5";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count _positions < 2"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__4">*/
+                class __4
+                {
+                        name = "__4";
+                        itemno = 15;
+                        init = /*%FSM<STATEINIT""">*/"{" \n
+                         "	_x switchmove ""stand"";" \n
+                         "	_x enableAI ""ANIM"";" \n
+                         "	_x enableAI ""MOVE"";" \n
+                         "} forEach units _grp;" \n
+                         "" \n
+                         "_unit1 doMove _home1;" \n
+                         "_unit2 doMove _home2;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!alive _unit1" \n
+                                         "or" \n
+                                         "!alive _unit2"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Check_For_Vehicl">*/
+                                class Check_For_Vehicl
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="__1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count (nearestObjects [_pos, _typeCheck, _distance]) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__5">*/
+                class __5
+                {
+                        name = "__5";
+                        itemno = 16;
+                        init = /*%FSM<STATEINIT""">*/"// we cant take a look at it" \n
+                         "_blackList set [count _blackList, typeOf _veh];" \n
+                         "" \n
+                         "[_unit1, {_this directSay ""TOUR_SV_noFix""}] remoteExec [""BIS_fnc_spawn"", 0, false];	" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!alive _unit1" \n
+                                         "or" \n
+                                         "!alive _unit2"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Check_For_Vehicl">*/
+                                class Check_For_Vehicl
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="__1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count (nearestObjects [_pos, _typeCheck, _distance]) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__6">*/
+                class __6
+                {
+                        name = "__6";
+                        itemno = 19;
+                        init = /*%FSM<STATEINIT""">*/"// we can take a look at it" \n
+                         "" \n
+                         "[[_unit1,_unit2], " \n
+                         "{" \n
+                         "	{	" \n
+                         "		_x switchmove ""stand"";" \n
+                         "		_x enableAI ""ANIM"";" \n
+                         "		_x enableAI ""MOVE"";" \n
+                         "	}forEach _this;" \n
+                         "	(_this select 0) directSay ""TOUR_SV_Fixing"";" \n
+                         "}] remoteExec [""BIS_fnc_spawn"", 0, false];" \n
+                         "" \n
+                         "_grp setSpeedMode ""Limited"";" \n
+                         "_grp setBehaviour ""Careless"";" \n
+                         "_grp setCombatMode ""BLUE"";" \n
+                         "_grp allowFleeing 0;" \n
+                         "" \n
+                         "_hitpos = (_positions call BIS_fnc_selectRandom);" \n
+                         "_positions = _positions - [ _hitpos ];" \n
+                         "_pos = (_veh modelToWorld (_veh selectionPosition _hitpos));" \n
+                         "_pos = [_pos select 0, _pos select 1, 0];" \n
+                         "_dir1 =  _veh getDir _pos;" \n
+                         "_point1 = (_pos getpos [1.4 , _dir1 ]);" \n
+                         "" \n
+                         "_anim1 = switch (true) do" \n
+                         "{" \n
+                         "	case (_hitpos in _defaultHigh): {""InBaseMoves_assemblingVehicleErc""};" \n
+                         "	case (_hitpos in _defaultLow): {""InBaseMoves_repairVehiclePne""};" \n
+                         "	case (_hitpos in _defaultWheel): {""Acts_carFixingWheel""};" \n
+                         "	default {""InBaseMoves_repairVehicleKnl""};" \n
+                         "};" \n
+                         "" \n
+                         "_hitpos = (_positions call BIS_fnc_selectRandom);" \n
+                         "_pos = (_veh modelToWorld (_veh selectionPosition _hitpos));" \n
+                         "_pos = [_pos select 0, _pos select 1, 0];" \n
+                         "_dir2 =  _veh getDir _pos;" \n
+                         "_point2 = (_pos getpos [1.4 , _dir2 ]);" \n
+                         "" \n
+                         "_anim2 = switch (true) do" \n
+                         "{" \n
+                         "	case (_hitpos in _defaultHigh): {""InBaseMoves_assemblingVehicleErc""};" \n
+                         "	case (_hitpos in _defaultLow): {""InBaseMoves_repairVehiclePne""};" \n
+                         "	case (_hitpos in _defaultWheel): {""Acts_carFixingWheel""};" \n
+                         "	default {""InBaseMoves_repairVehicleKnl""};" \n
+                         "};" \n
+                         "" \n
+                         "_unit1 doMove _point1;" \n
+                         "_unit2 doMove _point2;" \n
+                         "" \n
+                         "_time = time + 20;" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Engine_On__">*/
+                                class Engine_On__
+                                {
+                                        itemno = 14;
+                                        priority = 0.000000;
+                                        to="__4";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isEngineOn _veh)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Walked__To_Posit">*/
+                                class Walked__To_Posit
+                                {
+                                        itemno = 5;
+                                        priority = 0.000000;
+                                        to="__9";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(time > _time)" \n
+                                         "or" \n
+                                         "(" \n
+                                         "	(unitReady _unit1)" \n
+                                         "	&&" \n
+                                         "	(unitReady _unit2)" \n
+                                         ")"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"[[_unit1,_unit2], " \n
+                                         "{" \n
+                                         "	{	" \n
+                                         "		_x switchmove ""stand"";" \n
+                                         "		_x disableAI ""ANIM"";" \n
+                                         "		_x disableAI ""MOVE"";" \n
+                                         "	}forEach _this;" \n
+                                         "}] remoteExec [""BIS_fnc_spawn"", 0, false];" \n
+                                         "" \n
+                                         "_unit1 setDir (_unit1 getDir _point1);" \n
+                                         "_unit2 setDir (_unit2 getDir _point2);" \n
+                                         "" \n
+                                         "_timeout = time + 5;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__7">*/
+                class __7
+                {
+                        name = "__7";
+                        itemno = 20;
+                        init = /*%FSM<STATEINIT""">*/"_time = time + 1;" \n
+                         "" \n
+                         "_fuel = (fuel _veh + 0.02);" \n
+                         "if (_fuel > 1) then" \n
+                         "{" \n
+                         "	_fuel = 1;" \n
+                         "};" \n
+                         "" \n
+                         "_damage = (damage _veh - 0.02);" \n
+                         "if (_damage < 0) then" \n
+                         "{" \n
+                         "	_damage = 0;" \n
+                         "};" \n
+                         "" \n
+                         "[[_veh,_damage,_fuel], " \n
+                         "{" \n
+                         "	(_this select 0) setFuel (_this select 2);" \n
+                         "	(_this select 0) setDamage (_this select 1);" \n
+                         "}] remoteExec [""BIS_fnc_spawn"", 0, false];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Timed_ACtion">*/
+                                class Timed_ACtion
+                                {
+                                        itemno = 30;
+                                        priority = 0.000000;
+                                        to="__7";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"time > _time"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Engine_On__">*/
+                                class Engine_On__
+                                {
+                                        itemno = 14;
+                                        priority = 0.000000;
+                                        to="__4";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isEngineOn _veh)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 21;
+                                        priority = 0.000000;
+                                        to="__8";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((damage _veh < 0.02)&&(fuel _veh > 0.98))" \n
+                                         "&&" \n
+                                         "(time > _timeout)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__8">*/
+                class __8
+                {
+                        name = "__8";
+                        itemno = 22;
+                        init = /*%FSM<STATEINIT""">*/"[[_unit1,_unit2,_veh], " \n
+                         "{" \n
+                         "	{	" \n
+                         "		_x switchmove ""stand"";" \n
+                         "		_x enableAI ""ANIM"";" \n
+                         "		_x enableAI ""MOVE"";" \n
+                         "	}forEach _this;" \n
+                         "	(_this select 0) directSay ""TOUR_SV_Fixed"";" \n
+                         "	(_this select 2) setFuel 1;" \n
+                         "	(_this select 2) setDamage 0;" \n
+                         "	(_this select 2) setVehicleAmmo 1;" \n
+                         "}] remoteExec [""BIS_fnc_spawn"", 0, false];" \n
+                         "" \n
+                         "_unit1 doMove _home1;" \n
+                         "_unit2 doMove _home2;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!alive _unit1" \n
+                                         "or" \n
+                                         "!alive _unit2"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Check_For_Vehicl">*/
+                                class Check_For_Vehicl
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="__1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"count (nearestObjects [_pos, _typeCheck, _distance]) > 0"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__9">*/
+                class __9
+                {
+                        name = "__9";
+                        itemno = 24;
+                        init = /*%FSM<STATEINIT""">*/"if (_unit1 distance _point1 > 0.25) then" \n
+                         "{" \n
+                         "	if !(animationState _unit2 == ""HubSpectator_walkU"") then" \n
+                         "	{" \n
+                         "		[_unit1, {_this switchMove ""HubSpectator_walkU""}] remoteExec [""BIS_fnc_spawn"", 0, false];	" \n
+                         "	};" \n
+                         "}else" \n
+                         "{" \n
+                         "	if !(animationState _unit2 == ""stand"") then" \n
+                         "	{" \n
+                         "		[_unit1, {_this switchMove ""stand""}] remoteExec [""BIS_fnc_spawn"", 0, false];	" \n
+                         "	};" \n
+                         "};" \n
+                         "" \n
+                         "if (_unit2 distance _point2 > 0.25) then" \n
+                         "{" \n
+                         "	if !(animationState _unit2 == ""HubSpectator_walkU"") then" \n
+                         "	{" \n
+                         "		[_unit2, {_this switchMove ""HubSpectator_walkU""}] remoteExec [""BIS_fnc_spawn"", 0, false];	" \n
+                         "	};" \n
+                         "}else" \n
+                         "{" \n
+                         "	if !(animationState _unit2 == ""stand"") then" \n
+                         "	{" \n
+                         "		[_unit2, {_this switchMove ""stand""}] remoteExec [""BIS_fnc_spawn"", 0, false];	" \n
+                         "	};" \n
+                         "};" \n
+                         "" \n
+                         "_time = time + 2;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Timed_Action">*/
+                                class Timed_Action
+                                {
+                                        itemno = 28;
+                                        priority = 0.000000;
+                                        to="__9";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(time > _time)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"" \n
+                                         "(time > _time)"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Engine_On__">*/
+                                class Engine_On__
+                                {
+                                        itemno = 14;
+                                        priority = 0.000000;
+                                        to="__4";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isEngineOn _veh)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Check__At_Positi">*/
+                                class Check__At_Positi
+                                {
+                                        itemno = 25;
+                                        priority = 0.000000;
+                                        to="__10";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(" \n
+                                         "(_unit1 distance _point1 < 0.25)" \n
+                                         "&&" \n
+                                         "(_unit2 distance _point2 < 0.25)" \n
+                                         ")" \n
+                                         "or" \n
+                                         "(time > _timeout)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "__10">*/
+                class __10
+                {
+                        name = "__10";
+                        itemno = 27;
+                        init = /*%FSM<STATEINIT""">*/"_timeout = time + 2;" \n
+                         "[[_unit1,_unit2], " \n
+                         "{" \n
+                         "	{	" \n
+                         "		_x switchmove ""stand"";" \n
+                         "	}forEach _this;" \n
+                         "}] remoteExec [""BIS_fnc_spawn"", 0, false];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Engine_On__">*/
+                                class Engine_On__
+                                {
+                                        itemno = 14;
+                                        priority = 0.000000;
+                                        to="__4";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isEngineOn _veh)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "_">*/
+                                class _
+                                {
+                                        itemno = 29;
+                                        priority = 0.000000;
+                                        to="__7";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(time > _timeout)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_unit1 setPos _point1;" \n
+                                         "_unit2 setPos _point2;" \n
+                                         "if !(_anim1 == ""InBaseMoves_repairVehiclePne"") then" \n
+                                         "{ " \n
+                                         "	_unit1 setDir (_dir1 + 180);" \n
+                                         "}else" \n
+                                         "{" \n
+                                         "	_unit1 setDir _dir1;" \n
+                                         "};" \n
+                                         "" \n
+                                         "if !(_anim2 == ""InBaseMoves_repairVehiclePne"") then" \n
+                                         "{ " \n
+                                         "	_unit2 setDir (_dir2 + 180);" \n
+                                         "}else" \n
+                                         "{" \n
+                                         "	_unit2 setDir _dir2;" \n
+                                         "};" \n
+                                         "" \n
+                                         "[[_unit1, _anim1, _unit2, _anim2], " \n
+                                         "{" \n
+                                         "	{	" \n
+                                         "" \n
+                                         "		(_this select 0) switchMove (_this select 1);" \n
+                                         "		(_this select 0) disableAI ""ANIM"";" \n
+                                         "		(_this select 0) disableAI ""MOVE"";" \n
+                                         "" \n
+                                         "		(_this select 2) switchMove (_this select 3);" \n
+                                         "		(_this select 2) disableAI ""ANIM"";" \n
+                                         "		(_this select 2) disableAI ""MOVE"";" \n
+                                         "	}forEach _this;" \n
+                                         "}] remoteExec [""BIS_fnc_spawn"", 0, false];" \n
+                                         "" \n
+                                         "_timeout = time + 30;" \n
+                                         ""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Start";
+        finalStates[] =
+        {
+                "_",
+        };
+};
+/*%FSM</COMPILE>*/

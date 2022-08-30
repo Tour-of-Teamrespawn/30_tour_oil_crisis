@@ -1,0 +1,1 @@
+[player, "scripts\control\radio_in.sqf"] remoteExec ["BIS_fnc_execVM", 0, false];

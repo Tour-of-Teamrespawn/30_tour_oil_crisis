@@ -1,0 +1,142 @@
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 30; 
+};
+
+author = "Mr.Ben [Tour]";
+onLoadName = "30 [Tour] Oil Crisis v2.1"; 
+onLoadMission = "Stop those oil fields from burning!";
+onLoadMissionTime = true;
+briefingName = "30 [Tour] Oil Crisis v2.1";
+overviewPicture = "";
+loadScreen = "img\oilCrisis.paa"; //Loading screen picture, should be 1024x512 pixels in .paa format.
+enableItemsDropping = 0;
+disabledAI = true; 
+enableDebugConsole = 1;
+
+respawn = 3;
+respawnDelay = 30;
+respawnDialog = 1;
+respawnTemplates[] = {"tickets"};
+respawnVehicleDelay = 30;
+
+#include "scripts\TOUR_Explosives\dlg\bombDefuseDlg.hpp"
+#include "scripts\TOUR_IED\dlg\bombDefuseDlg.hpp"
+#include "scripts\TOUR_RC\dialog\hpp\admintool.hpp"
+
+class Params
+{
+	class TOUR_param_Respawn
+	{
+		//paramsArray[0]
+		title = "Respawn Time (s):";
+		values[] = {0, 30, 60, 300, 600, 900};
+		default = 30;
+		texts[] = {"None", "30 Seconds", "1 Minute", "5 Minutes", "10 Minutes", "15 Minutes"};
+	};
+	
+	class TOUR_param_tickets
+	{
+		//paramsArray[1]
+		title = "Lives:";
+		values[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100};
+		default = 1;
+		texts[] = {"1", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "20", "30", "40", "50", "100"};
+	};
+};
+
+class CfgDebriefing
+{
+	class complete
+	{
+		title = "Mission Success";
+		subtitle = "Bombs Disarmed";
+		description = "You have successfully disarmed all the explosive devices.";
+		pictureBackground = "img\USFlag.paa";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class partial
+	{
+		title = "Mission Partial Success";
+		subtitle = "Oil Field Under Enemy Control";
+		description = "You have successfully disarmed the bombs, but were unable to drive all the enemy away.";
+		pictureBackground = "img\USFlag.paa";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class civDead
+	{
+		title = "Mission Partial Success";
+		subtitle = "Civilian Casulaties";
+		description = "You have successfully disarmed all the bombs, but civilians casulaties occured during the operation.";
+		pictureBackground = "img\USFlag.paa";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	class failed
+	{
+		title = "Mission Failure";
+		subtitle = "Mission Aborted";
+		description = "You were unable disarm all the explosive devices.";
+		pictureBackground = "\ca\ca_E\data\flag_tka_co.paa";
+		picture = "o_inf";
+		pictureColor[] = { 0.6,0.1,0.2,1 };
+	};
+	class kia
+	{
+		title = "Mission Failure";
+		subtitle = "KIA";
+		description = "All teammates were killed in action.";
+		pictureBackground = "\ca\ca_E\data\flag_tka_co.paa";
+		picture = "o_inf";
+		pictureColor[] = { 0.6,0.1,0.2,1 };
+	};
+};
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class TOUR_SV_Fixing
+	{
+	   name = "TOUR_SV_Fixing1";
+	   sound[] = {};
+	   title = "Just leave it here and we will take a look at it. It should only take few minutes!";
+	}; 
+
+	class TOUR_SV_noFix
+	{
+	   name = "TOUR_SV_noFix";
+	   sound[] = {};
+	   title = "Sorry we are unable to fix this kind of vehicle...";
+	}; 	
+	  
+	class TOUR_SV_Fixed
+	{
+	   name = "TOUR_SV_Fixed";
+	   sound[] = {};
+	   title = "Service complete, she is as good as new!";
+	}; 	
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+   
+	class TOUR_key_noise
+	  {
+		   name = "TOUR_key_noise";
+		   sound[] = {"sounds\TOUR_key_noise.wav", 1, 1};
+		   titles[] = {};
+	  };
+
+	  class TOUR_introMusic
+	  {
+		   name = "TOUR_introMusic";
+		   sound[] = {"sounds\TOUR_introMusic.ogg", 1, 1};
+		   titles[] = {};
+	  };
+};
