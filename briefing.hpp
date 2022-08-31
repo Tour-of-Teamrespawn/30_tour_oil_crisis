@@ -21,7 +21,7 @@ player createDiaryRecord
 player createDiaryRecord 
 ["Diary", ["Mission", 
 	"
-		You can end the mission at any point, once all players are back at the <marker name=""TOUR_mkrFOB"">FOB</marker>. Use the action on the laptop next to the radio in the command bunker.
+		You can end the mission at any point, once all players are back at the <marker name=""TOUR_mkrFOB"">FOB</marker>. Use the ACE action on the radio in the command bunker.
 	"
 ]];
 
