@@ -77,7 +77,7 @@ player createDiaryRecord
 		<font size='16' color='#ffa500'>Fist Alpha:</font> PRC343 - Channel 5
 		<br />
 		<br />
-		<font size='16' color='#ffa500'>Eagle:</font> PRC343 - Channel 6
+		<font size='16' color='#ffa500'>Eagle One:</font> PRC343 - Channel 6
 		<br />
 		<br />	
 		Long range intersquad communications PRC148 set to channel 1

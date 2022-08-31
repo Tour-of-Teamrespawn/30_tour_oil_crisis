@@ -96,9 +96,6 @@ if (!isDedicated) then
 	[] execVM "scripts\TOUR_Explosives\init.sqf";
 	
 	_l = player execVM "scripts\loadouts\init.sqf";
-
-	TOUR_laptop addAction["Call HQ", "scripts\control\call_HQ.sqf", 0, 10, true, false, "", " !(TOUR_core getVariable 'TOUR_task_radio') && (player==leader group player) && ({(alive _x)&&((vehicle _x) distance (getMarkerPos ""TOUR_mkrFOB"") > 100)}count (playableUnits + switchableUnits) == 0)"];
-	player reveal TOUR_laptop;
 	
 	_int = execVM "scripts\general\intro.sqf";
 	execVM "scripts\general\medicTent.sqf";
@@ -106,6 +103,23 @@ if (!isDedicated) then
 	waitUntil {scriptDone _int};
 	sleep 10;
 	execVM "scripts\general\headCam.sqf";
+
+	_actionStaticRadioPickup = 	["Call HQ","Call HQ","",
+					{
+						execVM "scripts\control\call_HQ.sqf";
+					},
+					{
+						!(TOUR_core getVariable "TOUR_task_radio") && (player==leader group player) && ({(alive _x)&&((vehicle _x) distance (getMarkerPos "TOUR_mkrFOB") > 100)}count (playableUnits + switchableUnits) == 0)		
+					}
+				] call ace_interact_menu_fnc_createAction;
+				
+	[TOUR_Radio, 0, ["ACE_MainActions"], _actionStaticRadioPickup ]spawn ace_interact_menu_fnc_addActionToObject;
+
+	waitUntil {(player distance (getMarkerPos "TOUR_mkrFOB") > 150)};
+
+	private _text = "<t font='PuristaBold' size='2.5'>30 [Tour] Oil Crisis</t><br /><t font='PuristaBold' size='1.25'>by Mr.Ben</t>";
+	[parseText _text, true, nil, 7, 0.7, 0] spawn BIS_fnc_textTiles;
+
 };
 
 

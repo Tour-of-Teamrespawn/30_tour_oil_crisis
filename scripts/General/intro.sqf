@@ -198,10 +198,9 @@ if (!isdedicated) then
 	"dynamicBlur" ppEffectAdjust [2];
 	"dynamicBlur" ppEffectCommit 5;
 	sleep 0.5;
-	cutText ["[Tour] Oil Crisis","BLACK OUT", 5];
-	sleep 8;
-	cutText ["","BLACK FADED", 0];
-	sleep 1;
+	[format ["<t color='#d16c00' size = '2'>[TOUR] OIL CRISIS</t>", "asdf"],-1,0.5,5,2,0,789] spawn BIS_fnc_dynamicText;
+	cutText ["","BLACK OUT", 5];
+	sleep 9;
 	_cam1 cameraEffect ["TERMINATE", "back"];
 	camdestroy _cam1;
 	sleep 3;

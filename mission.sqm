@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=434;
+		nextID=435;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10407.07,240.82401,11943.401};
-		dir[]={-0.0056619807,-0.78514993,-0.61930394};
-		up[]={-0.0071780067,0.6192897,-0.78512734};
-		aside[]={-0.99997032,-3.2501703e-008,0.0091449488};
+		pos[]={10407.748,225.67451,11936.254};
+		dir[]={-0.95005274,-0.24870034,-0.18869084};
+		up[]={-0.24397568,0.96857154,-0.048457112};
+		aside[]={-0.19481209,3.3815741e-007,0.98086917};
 	};
 };
 binarizationWanted=0;
@@ -283,6 +283,10 @@ dlcs[]=
 	"Orange"
 };
 randomSeed=1215482;
+class ScenarioData
+{
+	author="Mr.Ben";
+};
 class Mission
 {
 	class Intel
@@ -3142,8 +3146,9 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						skill=1;
 						rank="LIEUTENANT";
-						init="call{ this setVariable [""TOUR_RC_Spectator"", [false, WEST]]; [this,[[""ACRE_PRC343"", 6],[""ACRE_PRC148"", 1]]] execVM ""scripts\general\radioChannelSetup.sqf"";}";
+						init="this setGroupID [""Eagle One""]; [this,[[""ACRE_PRC343"", 6],[""ACRE_PRC148"", 1]]] execVM ""scripts\general\radioChannelSetup.sqf"";";
 						name="TOUR_player_30";
 						description="1: Pilot @Eagle One";
 						isPlayer=1;
@@ -3212,17 +3217,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={10390.249,218.96449,11921.239};
-				angles[]={0,2.9671993,0};
+				position[]={10390.32,218.96939,11925.418};
+				angles[]={0,0.45875978,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				name="TOUR_radio";
 				disableSimulation=1;
 			};
 			id=201;
 			type="Land_PortableLongRangeRadio_F";
-			atlOffset=0.75549316;
+			atlOffset=0.76039124;
 			class CustomAttributes
 			{
 				class Attribute0
