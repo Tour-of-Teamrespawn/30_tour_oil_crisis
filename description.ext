@@ -6,10 +6,10 @@ class Header
 };
 
 author = "Mr.Ben [Tour]";
-onLoadName = "30 [Tour] Oil Crisis v2.1"; 
+onLoadName = "30 [Tour] Oil Crisis v2.2"; 
 onLoadMission = "Stop those oil fields from burning!";
 onLoadMissionTime = true;
-briefingName = "30 [Tour] Oil Crisis v2.1";
+briefingName = "30 [Tour] Oil Crisis v2.2";
 overviewPicture = "";
 loadScreen = "img\oilCrisis.paa"; //Loading screen picture, should be 1024x512 pixels in .paa format.
 enableItemsDropping = 0;
